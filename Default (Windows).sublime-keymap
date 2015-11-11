@@ -4,6 +4,29 @@
 	{ "keys": ["alt+shift+up"], "command": "swap_line_up" },
 	{ "keys": ["alt+shift+down"], "command": "swap_line_down" },
 	{ "keys": ["ctrl+shift+c"], "command": "toggle_comment", "args": { "block": false } },
-    { "keys": ["super+shift+r"],  "command": "reindent" }
-
+    { "keys": ["super+shift+r"],  "command": "reindent" },
+    { "keys": ["ctrl+r"], "command": "find_under_expand" },
+    { "keys": ["ctrl+b"], "command": "toggle_side_bar" },
+    { "keys": ["ctrl+shift+1"], "command": "reveal_in_side_bar"},
+     // Layout
+    {
+        "keys": ["ctrl+alt+1"],
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [[0, 0, 1, 1]]
+        }
+    },
+    {
+        "keys": ["ctrl+alt+2"],
+        "command": "set_layout",
+        "args":
+        {
+            "cols": [0.0, 0.5, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+        }
+    }
 ]
